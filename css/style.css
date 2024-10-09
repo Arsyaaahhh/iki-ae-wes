@@ -526,6 +526,56 @@ header {
     transition: all 0.3s ease;
 }
 
+
+/* explore */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Membuat item di dalamnya bisa pindah ke baris baru jika tidak muat */
+    gap: 20px; /* Jarak antara kartu */
+    justify-content: space-between; /* Membuat kartu merata secara horizontal */
+}
+
+/* CSS untuk kartu */
+.kartu-ex {
+    width: calc(20% - 20px); /* Untuk menampilkan 5 kartu dalam satu baris */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pastikan gambar di dalam kartu diatur dengan benar */
+.kartu-ex img {
+    width: 100%;
+    height: auto;
+}
+
+/* CSS untuk konten di dalam kartu */
+.card-content {
+    padding: 15px;
+}
+
+/* Untuk ikon dan teks di dalam kartu */
+.icon-text {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.preview {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.preview:hover {
+    background: #4B7FFF;
+    box-shadow: 0px 20px 40px rgba(74, 114, 255, 0.3);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
 /* ---------------------------------------------------- */
 /* Bagian Footer */
 
